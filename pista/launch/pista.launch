@@ -1,0 +1,8 @@
+<launch>
+  <arg name="size" default="1" />
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find pista)/worlds/pista$(arg size)x.world"/>
+    <arg name="verbose" value="true" />
+  </include>
+</launch>
